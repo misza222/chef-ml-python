@@ -1,0 +1,11 @@
+{
+  "name": "python",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "run_list":[
+    "recipe[python]",
+    "recipe[build-essential]",
+    "recipe[git]",
+    "recipe[python-ml]"
+  ]
+}

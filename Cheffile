@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'ntp'
+cookbook 'user'
+cookbook 'vim'
+cookbook 'openssh'
+cookbook 'sudo'
+cookbook 'screen'
+cookbook 'build-essential'
+cookbook 'apt'
+cookbook 'git'
+
+# install python, numpy, scipy, ipython, scikit-learn
+# to install pip packages use http://docs.opscode.com/lwrp_python.html
+cookbook 'python'

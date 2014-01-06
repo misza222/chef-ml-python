@@ -1,0 +1,14 @@
+cookbook_path ["cookbooks", "site-cookbooks"]
+node_path     "nodes"
+role_path     "roles"
+data_bag_path "data_bags"
+#encrypted_data_bag_secret "data_bag_key"
+
+knife[:berkshelf_path] = "cookbooks"
+
+#example command
+#                                       Ubuntu 12.04 x64     ams1     domain prefix       512MB     sshkey
+# knife digital_ocean droplet create -I 284203            -L 2     -N misza222-cheftest -S66     -K 38540
+knife[:digital_ocean_client_id] = 'your_client_id'
+knife[:digital_ocean_api_key]   = 'your_api_key'
+
